@@ -1,14 +1,15 @@
 {
-  "name": "learnode",
+  "name": "learn-node",
   "version": "1.0.0",
   "description": "All for practice we code",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "learnode"
+    "url": "https://github.com/chi-d-coder/learn-node.git"
   },
   "keywords": [
     "git",
@@ -16,5 +17,8 @@
     "node"
   ],
   "author": "Joyce",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }
