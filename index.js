@@ -6,7 +6,7 @@ const _ = require('lodash')
 _.assign({ 'a': 1 }, { 'b': 2 }, { 'c': 3 });
 // → { ‘a’: 1, ‘b’: 2, ‘c’: 3 }
 
-// starting http server
+// starting http server and send JSON responses
 const express = require('express')
 const app = express()
 app.use((request, response, next) => {
@@ -22,6 +22,7 @@ response.json({
 chance: request.chance
 })
 })
+//ERROR HANDLER FUNCTION
 // app.get('/', (request, response) => {
 //     throw new Error('oops')
 //     })
